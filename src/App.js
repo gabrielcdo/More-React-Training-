@@ -6,6 +6,7 @@ import Card from './components/layout/Card';
 import Parameter from './components/Parameter';
 import Sons from './components/Sons';
 import Repetitation from './components/layout/Repetitation';
+import Condition from './components/Condition';
 
 function App (props){
 
@@ -30,6 +31,9 @@ function App (props){
     <Card titulo="#04 - Repetição">
            <Repetitation></Repetitation>
         </Card>
+     <Card titulo="#05 - Condicional">
+         <Condition numero ={10}></Condition>
+         </Card>   
     
     
     </div>
