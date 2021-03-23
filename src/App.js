@@ -5,6 +5,7 @@ import Hello from './components/Hello'
 import Card from './components/layout/Card';
 import Parameter from './components/Parameter';
 import Sons from './components/Sons';
+import Repetitation from './components/layout/Repetitation';
 
 function App (props){
 
@@ -26,6 +27,9 @@ function App (props){
       </ul>
     </Sons>
     </Card>
+    <Card titulo="#04 - Repetição">
+           <Repetitation></Repetitation>
+        </Card>
     
     
     </div>
