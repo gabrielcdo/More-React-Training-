@@ -9,12 +9,18 @@ import Repetitation from './components/layout/Repetitation';
 import Condition from './components/basics/Condition';
 import Pai from './components/comicacao/direta/Pai';
 import Super from './components/comicacao/indireta/Super';
+import Cimput from './components/form/Impute';
+import Contador from './components/contador/Contador';
 
 function App (props){
 
     return (
       
         <div className="App">
+          <div>
+            <h1>Fundamentos React</h1>
+          </div>
+          <div className="cards">
     <Card titulo= "#01 Primeiro Componente" color="#6A5ACD">
     <First/>
     </Card>
@@ -43,11 +49,19 @@ function App (props){
          <Card titulo="#07 - Comunicação Direta" color="#854442">
          <Pai sobrenome="Oliveira"></Pai>
          </Card>  
-         <Card titulo="#07 - Comunicação Direta" color="#854442">
+         <Card titulo="#08 - Comunicação Direta" color="#854442">
          <Super></Super>
          </Card>  
+         <Card titulo="#09 - Comunicação Direta" color="#854442">
+         <Cimput></Cimput>
+         </Card>  
+         <Card titulo="#10 - Comunicação Direta" color="#854442">
+         <Contador passo={10}></Contador>
+         </Card>  
+
+
     
-    
+         </div>
     </div>
     )
 }
