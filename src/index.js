@@ -10,6 +10,9 @@ import './index.css'
 
 ReactDOM.render(
   <div>
+    <Card titulo= "Primeiro Componente">
+    <First/>
+    </Card>
     <Card titulo= "Exercício X">
       Conteudo
     </Card>
