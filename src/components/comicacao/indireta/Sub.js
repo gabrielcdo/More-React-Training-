@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sub(props){
     function acao(){
-        props.onClicar(Math.random(), 'Fim!')
+        props.onClicar(Math.random(), 'Gerado')
     }
     return(
         <div>
