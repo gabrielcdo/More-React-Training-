@@ -31,8 +31,11 @@ function App (props){
     <Card titulo="#04 - Repetição">
            <Repetitation></Repetitation>
         </Card>
-     <Card titulo="#05 - Condicional">
+     <Card titulo="#05 - Condicional V1">
          <Condition numero ={10}></Condition>
+         </Card>   
+         <Card titulo="#06 - Condicional V2">
+         <Condition numero ={9}></Condition>
          </Card>   
     
     
