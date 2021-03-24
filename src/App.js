@@ -11,6 +11,7 @@ import Pai from './components/comicacao/direta/Pai';
 import Super from './components/comicacao/indireta/Super';
 import Cimput from './components/form/Impute';
 import Contador from './components/contador/Contador';
+import Mega from './components/mega/Mega';
 
 function App (props){
 
@@ -49,15 +50,22 @@ function App (props){
          <Card titulo="#07 - Comunicação Direta" color="#854442">
          <Pai sobrenome="Oliveira"></Pai>
          </Card>  
-         <Card titulo="#08 - Comunicação Direta" color="#854442">
+         <Card titulo="#08 - Comunicação Indireta" color="#21130d">
          <Super></Super>
          </Card>  
-         <Card titulo="#09 - Comunicação Direta" color="#854442">
+         <Card titulo="#09 - Input" color="#8B658B">
          <Cimput></Cimput>
          </Card>  
-         <Card titulo="#10 - Comunicação Direta" color="#854442">
+         <Card titulo="#10 - Contador" color="#8B0000">
          <Contador passo={10}></Contador>
          </Card>  
+         <Card titulo="#11 - Mega" color="#FF7F24">
+         <Mega></Mega>
+         </Card>  
+         <Card titulo="#12 - video" color="#FF7F24">
+         <Mega></Mega>
+         </Card>  
+
 
 
     

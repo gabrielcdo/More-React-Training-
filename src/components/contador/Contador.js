@@ -1,4 +1,5 @@
 import React , { Component } from 'react' 
+import Butoes from './Botoes'
 import './Contador.css'
 import './Display'
 import Display from './Display'
@@ -34,11 +35,7 @@ export default class Contador extends Component{
              <Passo passo={this.state.passo}
              onPassoChange={this.mudarPasso}></Passo>
              <Display valor={this.state.valor}></Display>
-            <div>
-
-                <button onClick={this.inc}>+</button>
-                <button onClick={this.dec}>-</button>
-            </div>
+            <Butoes onInc={this.inc} onDec={this.dec}></Butoes>
 
         </div>
         
