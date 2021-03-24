@@ -12,6 +12,7 @@ import Super from './components/comicacao/indireta/Super';
 import Cimput from './components/form/Impute';
 import Contador from './components/contador/Contador';
 import Mega from './components/mega/Mega';
+import MegaT from './components/mega/MegaT';
 
 function App (props){
 
@@ -62,8 +63,9 @@ function App (props){
          <Card titulo="#11 - Mega" color="#FF7F24">
          <Mega></Mega>
          </Card>  
-         <Card titulo="#12 - video" color="#FF7F24">
-         <Mega></Mega>
+         <Card titulo="#12 - video" color="#68228B">
+         <MegaT qtdeNumero={8}>
+         </MegaT>
          </Card>  
 
 
