@@ -1,7 +1,10 @@
 import React , { Component } from 'react' 
 import './Contador.css'
+import './Display'
+import Display from './Display'
+import Passo from './Passo'
 export default class Contador extends Component{
-    
+
     state = {
         passo: this.props.passo || 1,
         valor:this.props.valor ||0
@@ -18,16 +21,19 @@ export default class Contador extends Component{
         })
         this.state.valor--
     }
+    mudarPasso = (novoPasso) => {
+        this.setState({
+            passo: novoPasso
+        })
+    }
     render(){
         return(
         <div className="Contador">
             <h2>Contador</h2>
-            <div>
-            <label for="passoInput">Passo: {this.state.passo}</label>
-             <input id="passoInput" type="number"  value={this.state.passo} onChange={e => this.setState({ passo: +e.target.value})}></input>
-             </div>
-
-             <h4>Valor: {this.state.valor}</h4>
+            
+             <Passo passo={this.state.passo}
+             onPassoChange={this.mudarPasso}></Passo>
+             <Display valor={this.state.valor}></Display>
             <div>
 
                 <button onClick={this.inc}>+</button>
